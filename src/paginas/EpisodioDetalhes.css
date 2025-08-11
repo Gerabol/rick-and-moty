@@ -1,0 +1,200 @@
+.topo-detalhe-episodio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 18px;
+  background: transparent;
+  padding: 0;
+}
+
+.voltar-btn {
+  background-color: #b0f665;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 18px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.voltar-btn:hover {
+  background: #99d94f;
+}
+
+.episodio-titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.episodio-detalhe-container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.episodio-main-card {
+  background: #fff;
+  border: 2px solid #b0f665;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(176,246,101,0.12);
+  padding: 28px 24px 34px 24px;
+  margin-bottom: 32px;
+}
+
+.episodio-info-quadrados {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-bottom: 30px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.episodio-info-bloco {
+  background: #f6fff0;
+  border: 2px solid #b0f665;
+  border-radius: 14px;
+  padding: 18px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.episodio-info-label {
+  color: #62b934;
+  font-weight: 600;
+  font-size: 0.97rem;
+  margin-bottom: 7px;
+}
+
+.episodio-info-valor {
+  color: #222;
+  font-size: 1.13rem;
+  font-weight: 500;
+}
+
+.episodio-personagens-titulo {
+  font-size: 1.09rem;
+  color: #b0f665;
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+}
+
+.episodio-personagens-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px 14px;
+}
+
+.episodio-personagem-card {
+  background: #f6fff0;
+  border-radius: 9px;
+  padding: 13px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.episodio-personagem-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 6px;
+}
+
+.episodio-personagem-nome {
+  font-weight: 600;
+  color: #62b934;
+  font-size: 0.93rem;
+  text-align: center;
+}
+
+.episodio-personagem-status {
+  color: #888;
+  font-size: 0.80rem;
+}
+
+.escuro .topo-detalhe-episodio {
+  background: transparent;
+}
+
+.escuro .voltar-btn {
+  background-color: #6fa83e;
+  color: #fff;
+}
+
+.escuro .voltar-btn:hover {
+  background-color: #88c552;
+}
+
+.escuro .episodio-titulo {
+  color: #f1f1f1; 
+}
+
+.escuro .episodio-main-card {
+  background: #191b1b;
+  border-color: #b0f665;
+}
+
+.escuro .episodio-info-bloco {
+  background: #222823;
+  border-color: #b0f665;
+}
+
+.escuro .episodio-info-label {
+  color: #b0f665;
+}
+
+.escuro .episodio-info-valor {
+  color: #ededed;
+}
+
+.escuro .episodio-personagens-titulo {
+  color: #b0f665;
+}
+
+.escuro .episodio-personagem-card {
+  background: #212820;
+}
+
+.escuro .episodio-personagem-nome {
+  color: #b0f665;
+}
+
+.escuro .episodio-personagem-status {
+  color: #ccc;
+}
+
+@media (max-width: 950px) {
+  .episodio-personagens-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 700px) {
+  .episodio-info-quadrados { grid-template-columns: 1fr; gap: 18px; }
+  .episodio-personagens-grid { grid-template-columns: 1fr 1fr; gap: 18px 8px; }
+}
+@media (max-width: 440px) {
+  .topo-detalhe-episodio { flex-direction: column; gap: 8px; }
+  .episodio-titulo { font-size: 1.3rem; }
+  .episodio-personagens-grid { grid-template-columns: 1fr; gap: 10px 0; }
+}
+
+.episodio-personagem-localizacao {
+  color: black;
+  font-size: 0.82rem;
+  margin-top: 2px;
+  font-weight: bold;
+}
+
+.escuro .episodio-personagem-localizacao {
+  color: #f6d765;
+  font-weight: bold;
+}

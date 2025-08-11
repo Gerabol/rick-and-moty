@@ -1,0 +1,177 @@
+.topo-detalhes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  max-width: 820px;
+  margin: 0 auto 20px auto;
+  padding: 0 8px;
+}
+
+.voltar-btn {
+  background-color: #b0f665;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 30px;
+}
+
+.voltar-btn:hover {
+  background: #99d94f;
+}
+
+.escuro .voltar-btn {
+  background-color: #6fa83e;
+  color: #fff;
+}
+
+.escuro .voltar-btn:hover {
+  background-color: #88c552;
+}
+
+.episodios-titulo-lista {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.episodios-titulo-lista.claro {
+  color: #222;
+}
+
+.episodios-titulo-lista.escuro {
+  color: #f1f1f1;
+}
+
+.episodios-grid-5col {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px 10px;
+  padding: 8px;
+  background: #f6fff0;
+  border: 2px solid #b0f665;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(176, 246, 101, 0.13);
+  margin-bottom: 30px;
+}
+
+.episodios-grid-5col.escuro {
+  background: #202921;
+  border-color: #b0f665;
+}
+
+.episodio-quadrado {
+  background: #fff;
+  border-radius: 8px;
+  padding: 5px 6px;
+  box-shadow: 0 1px 6px rgba(176, 246, 101, 0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  font-size: 0.83rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.episodio-quadrado:hover {
+  background: #e8ffd2;
+}
+
+.episodios-grid-5col.escuro .episodio-quadrado {
+  background: #262e25;
+  color: #b0f665;
+}
+
+.episodio-nome {
+  font-weight: 600;
+  color: #62b934;
+  font-size: 0.93rem;
+  margin-bottom: 3px;
+}
+
+.episodios-grid-5col.escuro .episodio-nome {
+  color: #b0f665;
+}
+
+.episodio-codigo {
+  font-weight: 500;
+  color: #444;
+  font-size: 0.8rem;
+  margin-bottom: 2px;
+}
+
+.episodios-grid-5col.escuro .episodio-codigo {
+  color: #999;
+}
+
+.episodio-data {
+  color: #888;
+  font-size: 0.78rem;
+}
+
+.episodios-grid-5col.escuro .episodio-data {
+  color: #ccc;
+}
+
+.paginacao-episodios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.paginacao-btn {
+  padding: 5px 12px;
+  background: #b0f665;
+  border: none;
+  border-radius: 7px;
+  color: #222;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.paginacao-btn:disabled {
+  background: #e0e0e0;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.paginacao-indice {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222;
+}
+
+.escuro .paginacao-indice {
+  color: #f1f1f1;
+}
+
+@media (max-width: 1100px) {
+  .episodios-grid-5col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .episodios-grid-5col {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7px 4px;
+    padding: 3px;
+  }
+}
+@media (max-width: 450px) {
+  .episodios-grid-5col {
+    grid-template-columns: 1fr;
+  }
+}

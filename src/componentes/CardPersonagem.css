@@ -1,0 +1,60 @@
+.card-personagem {
+  border: 2px solid #b0f665;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 2px 12px rgba(176, 246, 101, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  max-width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-personagem.claro {
+  background-color: #fff;
+  color: #222;
+}
+
+.card-personagem.escuro {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.card-personagem:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 18px rgba(176, 246, 101, 0.3);
+}
+
+.card-personagem img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 9px;
+  margin-bottom: 12px;
+}
+
+.card-personagem h3 {
+  font-size: 1.18rem;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.card-personagem p {
+  font-size: 0.95rem;
+  margin: 4px 0;
+  text-align: center;
+}
+
+.card-personagem {
+  text-decoration: none;
+  color: inherit;
+}
+.card-personagem:hover,
+.card-personagem:focus {
+  text-decoration: none;
+}
+.card-personagem h3,
+.card-personagem p {
+  text-decoration: none;
+}

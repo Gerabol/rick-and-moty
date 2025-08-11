@@ -1,0 +1,49 @@
+.lampada-animada {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+.lampada-animada::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 34px;
+  height: 34px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  animation: brilho-lampada 1.2s infinite alternate;
+  box-shadow: 0 0 22px 6px rgba(110, 255, 59, 0.35);
+}
+
+@keyframes brilho-lampada {
+  0% {
+    box-shadow: 0 0 9px 3px rgba(110, 255, 59, 0.12);
+  }
+  50% {
+    box-shadow: 0 0 28px 10px rgba(110, 255, 59, 0.44);
+  }
+  100% {
+    box-shadow: 0 0 13px 4px rgba(110, 255, 59, 0.15);
+  }
+}
+
+.escuro.lampada-animada::after {
+  animation-name: brilho-lampada-escura;
+  box-shadow: 0 0 22px 6px rgba(30, 38, 45, 0.6);
+}
+
+@keyframes brilho-lampada-escura {
+  0% {
+    box-shadow: 0 0 9px 3px rgba(30, 38, 45, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 28px 10px rgba(30, 38, 45, 0.44);
+  }
+  100% {
+    box-shadow: 0 0 13px 4px rgba(30, 38, 45, 0.22);
+  }
+}

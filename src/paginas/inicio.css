@@ -1,0 +1,37 @@
+.hbo-background {
+  background-image: url('/img/bg-rick.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;  
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.textos-esquerda {
+  max-width: 650px;
+  padding: 88px 32px 24px 48px;
+  color: #fff;
+  text-align: left;
+}
+
+.logo-inicio {
+  width: 380px;
+  height: auto;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.descricao-inicio {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.aluno-inicio {
+  font-size: 20px;
+  opacity: 0.9;
+  margin-bottom: 0; 
+  color: #b0f665;
+}

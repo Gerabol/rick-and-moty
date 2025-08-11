@@ -1,69 +1,69 @@
-# React + TypeScript + Vite
+# Rick and Morty App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web desenvolvida em **Vite + React** para consumir a API oficial do [Rick and Morty](https://rickandmortyapi.com), exibindo informações sobre episódios e personagens de forma interativa, com suporte a **modo claro/escuro** e animações personalizadas.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📚 Sobre o Projeto
 
-## Expanding the ESLint configuration
+Este projeto foi desenvolvido por **Geraldo Valencia** como parte da **Pós-Graduação em Desenvolvimento de Aplicações Web**  
+**Centro Universitário Unipê - Cruzeiro do Sul Educacional**.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+O sistema permite:
+- Listar episódios em um layout responsivo.
+- Paginação dos episódios com indicador dinâmico.
+- Visualizar detalhes completos de cada episódio (título, código, data de exibição e personagens participantes).
+- Visualizar a última localização de cada personagem.
+- Alternar entre **modo claro e escuro** com ícone de lâmpada animado.
+- Animação de brilho ao redor da lâmpada adaptada para modo claro e escuro.
+- Layout adaptado para desktop e dispositivos móveis.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🚀 Tecnologias Utilizadas
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- ⚡ **[Vite](https://vitejs.dev/)** – build rápido para desenvolvimento moderno em React.
+- ⚛ **React** – biblioteca para construção da interface.
+- 📡 **Axios** – consumo da API Rick and Morty.
+- 🎨 **CSS3 / Flexbox / Grid Layout** – estilização responsiva.
+- 🌓 **Dark Mode** – alternância de tema com animação personalizada na lâmpada.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📂 Estrutura de Páginas
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### **Lista de Episódios**
+- Grid adaptável (5 colunas no desktop, adaptando para telas menores).
+- Botão para **voltar** à página anterior.
+- Paginação dinâmica (**Página X de Y**).
+- Cada episódio é clicável e leva aos detalhes.
+
+### **Detalhe do Episódio**
+- Título e botão voltar no topo.
+- Cartão com:
+  - Código do episódio (ex: S01 E10).
+  - Data de exibição.
+- Lista de personagens participantes:
+  - Nome
+  - Status
+  - Última localização
+  - Foto
+- Layout responsivo e integrado ao modo claro/escuro.
+
+### **Navbar com Toggle**
+- Botão no formato **lâmpada** para alternar entre claro/escuro.
+- Brilho pulsante animado:
+  - Verde no modo claro.
+  - Tom escuro no modo escuro.
+
+---
+
+## 📸 Demonstração da Interface
+
+> *(adicione screenshots do seu sistema aqui para ilustrar a interface no modo claro e escuro).*
+
+---
+
+## ⚙️ Como Executar Localmente
+
+1. **Clone o repositório:**

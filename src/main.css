@@ -1,0 +1,11 @@
+.space-vertical {
+  padding-top: 20px;
+}
+
+.centraliza-conteudo {
+  max-width: 800px;   
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}

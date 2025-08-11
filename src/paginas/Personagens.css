@@ -1,0 +1,32 @@
+.background-escuro {
+  background-color: #181a1b;
+}
+
+.background-claro {
+  background-color: #fafafa;
+}
+
+.lista-personagens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 32px;
+  padding: 32px;
+  justify-items: center;
+}
+
+.titulo-personagens {
+  padding-top: 24px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 38px;
+}
+
+
+.titulo-personagens.claro {
+  color: #222;
+}
+
+.titulo-personagens.escuro {
+  color: #fff;
+}

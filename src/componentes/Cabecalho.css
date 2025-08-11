@@ -1,0 +1,14 @@
+.bg-navbar-custom {
+  background: linear-gradient(90deg, #1a7c0d 0%, #b0f665 100%);
+}
+
+.navbar {
+  min-height: 40px; 
+  box-shadow: 0 0 20px #43ea3080;
+}
+
+.navbar-brand img {
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 20px #43ea30);
+}
